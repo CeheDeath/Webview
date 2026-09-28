@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Portfolio ICT251 Activity 2</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Web Portfolio</h1>
+        <p>ICT251 Web Technologies</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hobbies">My Hobbies</a></li>
+            <li><a href="#learning">My Learning Plan</a></li>
+            <li><a href="#photos">My Photos</a></li>
+            <li><a href="#media">My Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">
+                Learn web development at MDN Web Docs
+            </a>
+        </p>
+    </nav>
+
+    <main>
+
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                My name is Rlado Chipfumbu, a student at Mulungushi University partaking in the Computer Science Programme.
+                In my free time i update this website s a part of the ICT251 lab work, but for hobbies i usually stick to chess,
+                sudoku/puzzles, gaming, meditation and IT.
+            </p>
+        </section>
+
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Chess</li>
+                <li>Puzzle solving</li>
+                <li>Meditation</li>
+                <li>Gaming</li>
+            </ul>
+        </section>
+
+        <section id="learning" class="content-section">
+            <h2>My Learning Plan</h2>
+            <ol>
+                <li>Complete the Web Technologies course with an A+.</li>
+                <li>Build one small practice webpage every week.</li>
+                <li>Review my code with a classmate and improve it based on feedback.</li>
+            </ol>
+
+            <table>
+                <caption>Weekly Web Learning Plan</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML structure</td>
+                        <td>Build a page with header, nav, main, footer</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS styling</td>
+                        <td>Style a page with colors, fonts, and spacing</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Media &amp; forms</td>
+                        <td>Add images, video, audio, and a working form</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- PHOTOS -->
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/img1.jpeg" alt="Being there basking in the sun and enjoying a good time.">
+                    <figcaption>By the day we live.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/img2.jpeg" alt="Showing off that even the evening is ours to live.">
+                    <figcaption>Just another part of life in the day..</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/img3.jpeg" alt="It is important for a man to enjoy life">
+                    <figcaption>Life at its best..</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+
+            <h3>Video Sample</h3>
+            <video controls width="480">
+                <source src="videos/Trust.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                <strong>Written summary:</strong> This is a video whereby the message potrays that with God all is well. If Jesus is where you are and in him you are there , then all is well.
+
+            </p>
+
+            <h3>Audio Clip</h3>
+            <audio controls>
+                <source src="videos/Trust2.m4a" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+            <p>
+                Baba ilwa nabalwa nami by DJ Zinhle.
+            </p>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact</h2>
+            <p>
+                This form is for practice only. It does <strong>not</strong> send data
+                anywhere submission is handled locally.
+            </p>
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="topic">Topic:</label>
+                    <select id="topic" name="topic">
+                        <option value="general">General question</option>
+                        <option value="feedback">Feedback on my site</option>
+                        <option value="collab">Study collaboration</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </p>
+                <p>
+                    <button type="submit">Send Message</button>
+                </p>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 @Raldo ICT251 Activity 2</p>
+    </footer>
+
+</body>
+</html>
