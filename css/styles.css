@@ -219,3 +219,93 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+/* Equal size for gallery images */
+.gallery img {
+    width: 100%;
+    max-width: 480px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Slideshow controls */
+.gallery-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+.gallery-controls button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Theme button */
+.theme-btn {
+    margin: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Dark theme styling */
+.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+.dark-theme header,
+.dark-theme footer {
+    background-color: #1e1e1e;
+}
+.dark-theme nav a {
+    color: #f0f0f0;
+}
+.dark-theme nav a.active {
+    border-bottom: 2px solid #f0f0f0;
+}
+/* Slideshow container */
+.gallery {
+    position: relative;
+    max-width: 800px;   /* wider size for desktop */
+    margin: auto;
+}
+
+/* Equal size for gallery images */
+.gallery img {
+    width: 100%;        /* fill the container */
+    height: 450px;      /* taller height */
+    object-fit: cover;  /* crop neatly */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hide all figures initially */
+.gallery figure {
+    display: none;
+    text-align: center;
+}
+
+/* Arrow controls */
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;          /* bigger arrows */
+    padding: 8px;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    user-select: none;
+    transform: translateY(-50%);
+}
+.arrow.prev { left: 20px; }
+.arrow.next { right: 20px; }
+
+/* Smooth fade effect */
+.gallery figure {
+    animation: fade 0.5s ease-in-out;
+}
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
